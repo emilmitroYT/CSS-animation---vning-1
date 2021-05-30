@@ -1,0 +1,84 @@
+#up1{
+    background: red;
+    transition: width 2s;
+}
+#up1:hover{
+    background:green;
+}
+
+
+#up2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: inline-block;
+    background: green;
+    position: relative;
+    animation: mymove1 5s infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+@keyframes mymove1 {
+    from {left: 0px;}
+    to {left: 100%;}
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+  #up3{
+      height: 200px;
+      width: 100%;
+      background:rgb(91, 91, 216);
+      position: relative;
+  }
+
+  #up3a{
+      width: 200px;
+      position: absolute;
+      top: 200px;
+      animation: mymove2 10s infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+  }
+  @keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 80%;}
+}
+
+
+#progressbar {
+    background-color: black;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    position: relative;
+    
+  }
+  
+ 
+.progress {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.912);  
+
+  }
+  
+  .progress-bar {
+    height: 18px;
+    border-radius: 30px;
+ 
+  }
+  
+  .progress-moved .progress-bar {
+    width: 85%; 
+    background-color: green;  
+    animation: progressAnimation 6s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes progressAnimation {
+    0%   { width: 5%;}
+    100% { width: 100%;}
+  }
